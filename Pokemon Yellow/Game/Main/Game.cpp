@@ -8,6 +8,7 @@
 
 #include "Game.hpp"
 #include "EventHandler.hpp"
+#include "Player.hpp"
 
 Game::Game() {
   this->spriteHandler = new SpriteHandler();
@@ -22,6 +23,9 @@ void Game::start() {
   window.setFramerateLimit(60);
   sf::RenderWindow *renderWindow = &window;
   EventHandler *eventHandler = new EventHandler(renderWindow);
+  
+  Player *player = new Player();
+  spriteHandler->addSprite(player->getSprite());
 
   while (window.isOpen()) {
     // Process events
@@ -40,5 +44,6 @@ void Game::start() {
     window.display();
   }
   
+  delete player;
   delete eventHandler;
 }

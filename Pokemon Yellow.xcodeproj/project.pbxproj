@@ -14,6 +14,7 @@
 		43F65ADF20106607006CB8A1 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F65ADD20106607006CB8A1 /* Player.cpp */; };
 		43F65AE6201067DD006CB8A1 /* ResourceHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F65AE4201067DD006CB8A1 /* ResourceHandler.cpp */; };
 		43F65AE9201068AC006CB8A1 /* SpriteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F65AE7201068AC006CB8A1 /* SpriteHandler.cpp */; };
+		43F65AEC20106F97006CB8A1 /* player1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F65AEB20106F97006CB8A1 /* player1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		43F65AE5201067DD006CB8A1 /* ResourceHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourceHandler.hpp; sourceTree = "<group>"; };
 		43F65AE7201068AC006CB8A1 /* SpriteHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteHandler.cpp; sourceTree = "<group>"; };
 		43F65AE8201068AC006CB8A1 /* SpriteHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SpriteHandler.hpp; sourceTree = "<group>"; };
+		43F65AEB20106F97006CB8A1 /* player1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		43F65AC42010548B006CB8A1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				43F65AEA20106F8C006CB8A1 /* Player Sprites */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -136,6 +139,14 @@
 				43F65AE8201068AC006CB8A1 /* SpriteHandler.hpp */,
 			);
 			path = ResourceHandler;
+			sourceTree = "<group>";
+		};
+		43F65AEA20106F8C006CB8A1 /* Player Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				43F65AEB20106F97006CB8A1 /* player1.png */,
+			);
+			path = "Player Sprites";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43F65AEC20106F97006CB8A1 /* player1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +340,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8JJJE8AZGK;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "Pokemon Yellow/Pokemon Yellow-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -339,6 +352,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8JJJE8AZGK;
+				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = "Pokemon Yellow/Pokemon Yellow-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
