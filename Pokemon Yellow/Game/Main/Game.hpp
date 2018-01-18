@@ -11,11 +11,15 @@
 
 #include <stdio.h>
 #include <SFML/Graphics.hpp>
+#include "SpriteHandler.hpp"
 
 class Game {
 public:
+  Game();
+  ~Game();
   void start();
-  
+private:
+  SpriteHandler *spriteHandler;
 };
 
 #endif /* Game_hpp */

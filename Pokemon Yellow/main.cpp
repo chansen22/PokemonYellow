@@ -14,12 +14,7 @@
 // function `resourcePath()` from ResourcePath.hpp
 //
 
-#include <SFML/Audio.hpp>
-#include <SFML/Graphics.hpp>
 #include "Game.hpp"
-
-// Here is a small helper for you! Have a look.
-#include "ResourcePath.hpp"
 
 int main(int, char const**) {
   Game *game = new Game();

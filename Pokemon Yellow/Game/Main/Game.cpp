@@ -9,11 +9,20 @@
 #include "Game.hpp"
 #include "EventHandler.hpp"
 
+Game::Game() {
+  this->spriteHandler = new SpriteHandler();
+}
+
+Game::~Game() {
+  delete this->spriteHandler;
+}
+
 void Game::start() {
   sf::RenderWindow window(sf::VideoMode(800, 600), "Pokeman");
+  window.setFramerateLimit(60);
   sf::RenderWindow *renderWindow = &window;
   EventHandler *eventHandler = new EventHandler(renderWindow);
-  
+
   while (window.isOpen()) {
     // Process events
     sf::Event event;
@@ -25,6 +34,8 @@ void Game::start() {
     // Clear screen
     window.clear();
     
+    spriteHandler->drawSpritesInWindow(renderWindow);
+
     // Update the window
     window.display();
   }

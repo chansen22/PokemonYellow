@@ -12,6 +12,8 @@
 		43F65AD82010550B006CB8A1 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F65AD62010550B006CB8A1 /* Game.cpp */; };
 		43F65ADB2010564D006CB8A1 /* EventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F65AD92010564D006CB8A1 /* EventHandler.cpp */; };
 		43F65ADF20106607006CB8A1 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F65ADD20106607006CB8A1 /* Player.cpp */; };
+		43F65AE6201067DD006CB8A1 /* ResourceHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F65AE4201067DD006CB8A1 /* ResourceHandler.cpp */; };
+		43F65AE9201068AC006CB8A1 /* SpriteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F65AE7201068AC006CB8A1 /* SpriteHandler.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		43F65ADA2010564D006CB8A1 /* EventHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EventHandler.hpp; sourceTree = "<group>"; };
 		43F65ADD20106607006CB8A1 /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		43F65ADE20106607006CB8A1 /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
+		43F65AE4201067DD006CB8A1 /* ResourceHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceHandler.cpp; sourceTree = "<group>"; };
+		43F65AE5201067DD006CB8A1 /* ResourceHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourceHandler.hpp; sourceTree = "<group>"; };
+		43F65AE7201068AC006CB8A1 /* SpriteHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteHandler.cpp; sourceTree = "<group>"; };
+		43F65AE8201068AC006CB8A1 /* SpriteHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SpriteHandler.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				43F65AD2201054E0006CB8A1 /* Game */,
-				43F65ABF2010548B006CB8A1 /* ResourcePath.mm */,
-				43F65AC12010548B006CB8A1 /* ResourcePath.hpp */,
+				43F65AE32010678B006CB8A1 /* ResourceHandler */,
 				43F65AC22010548B006CB8A1 /* main.cpp */,
 				43F65AC42010548B006CB8A1 /* Resources */,
 				43F65ABD2010548B006CB8A1 /* Supporting Files */,
@@ -118,6 +123,19 @@
 				43F65AD72010550B006CB8A1 /* Game.hpp */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		43F65AE32010678B006CB8A1 /* ResourceHandler */ = {
+			isa = PBXGroup;
+			children = (
+				43F65ABF2010548B006CB8A1 /* ResourcePath.mm */,
+				43F65AC12010548B006CB8A1 /* ResourcePath.hpp */,
+				43F65AE4201067DD006CB8A1 /* ResourceHandler.cpp */,
+				43F65AE5201067DD006CB8A1 /* ResourceHandler.hpp */,
+				43F65AE7201068AC006CB8A1 /* SpriteHandler.cpp */,
+				43F65AE8201068AC006CB8A1 /* SpriteHandler.hpp */,
+			);
+			path = ResourceHandler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +226,8 @@
 				43F65ADB2010564D006CB8A1 /* EventHandler.cpp in Sources */,
 				43F65AC32010548B006CB8A1 /* main.cpp in Sources */,
 				43F65AC02010548B006CB8A1 /* ResourcePath.mm in Sources */,
+				43F65AE9201068AC006CB8A1 /* SpriteHandler.cpp in Sources */,
+				43F65AE6201067DD006CB8A1 /* ResourceHandler.cpp in Sources */,
 				43F65ADF20106607006CB8A1 /* Player.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
