@@ -15,6 +15,7 @@
 		43F65AE6201067DD006CB8A1 /* ResourceHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F65AE4201067DD006CB8A1 /* ResourceHandler.cpp */; };
 		43F65AE9201068AC006CB8A1 /* SpriteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F65AE7201068AC006CB8A1 /* SpriteHandler.cpp */; };
 		43F65AEC20106F97006CB8A1 /* player1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F65AEB20106F97006CB8A1 /* player1.png */; };
+		43F65AF3201078EB006CB8A1 /* Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F65AF1201078EB006CB8A1 /* Drawable.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		43F65AE7201068AC006CB8A1 /* SpriteHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteHandler.cpp; sourceTree = "<group>"; };
 		43F65AE8201068AC006CB8A1 /* SpriteHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SpriteHandler.hpp; sourceTree = "<group>"; };
 		43F65AEB20106F97006CB8A1 /* player1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player1.png; sourceTree = "<group>"; };
+		43F65AF1201078EB006CB8A1 /* Drawable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Drawable.cpp; sourceTree = "<group>"; };
+		43F65AF2201078EB006CB8A1 /* Drawable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Drawable.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,7 @@
 		43F65AD2201054E0006CB8A1 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				43F65AF0201078DB006CB8A1 /* Drawable */,
 				43F65ADC20105B64006CB8A1 /* Player */,
 				43F65AE2201066B8006CB8A1 /* Main */,
 				43F65AE1201066A3006CB8A1 /* Event Handler */,
@@ -147,6 +151,15 @@
 				43F65AEB20106F97006CB8A1 /* player1.png */,
 			);
 			path = "Player Sprites";
+			sourceTree = "<group>";
+		};
+		43F65AF0201078DB006CB8A1 /* Drawable */ = {
+			isa = PBXGroup;
+			children = (
+				43F65AF1201078EB006CB8A1 /* Drawable.cpp */,
+				43F65AF2201078EB006CB8A1 /* Drawable.hpp */,
+			);
+			path = Drawable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +254,7 @@
 				43F65AE9201068AC006CB8A1 /* SpriteHandler.cpp in Sources */,
 				43F65AE6201067DD006CB8A1 /* ResourceHandler.cpp in Sources */,
 				43F65ADF20106607006CB8A1 /* Player.cpp in Sources */,
+				43F65AF3201078EB006CB8A1 /* Drawable.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
