@@ -28,3 +28,10 @@ void SpriteHandler::drawInWindow(sf::RenderWindow *window) {
     window->draw(sprite);
   }
 }
+
+void SpriteHandler::stepSprites() {
+  std::vector<Drawable *>::iterator it;
+  for (it = drawables->begin(); it < drawables->end(); it++) {
+    (*it)->stepSprite();
+  }
+}

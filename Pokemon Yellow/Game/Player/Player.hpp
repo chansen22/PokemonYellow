@@ -17,11 +17,13 @@ class Player: Drawable {
 public:
   double x = 0;
   double y = 0;
+  int step = 1;
 
   Player();
   ~Player();
   
   sf::Sprite getSprite();
+  void stepSprite();
 private:
   sf::Sprite sprite;
   sf::Texture texture;

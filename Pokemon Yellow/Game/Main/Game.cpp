@@ -9,6 +9,8 @@
 #include "Game.hpp"
 #include "EventHandler.hpp"
 #include "Player.hpp"
+#include <chrono>
+#include <thread>
 
 Game::Game() {
   this->spriteHandler = new SpriteHandler();
@@ -39,9 +41,11 @@ void Game::start() {
     window.clear();
     
     spriteHandler->drawInWindow(renderWindow);
+    spriteHandler->stepSprites();
 
     // Update the window
     window.display();
+    std::this_thread::sleep_for(std::chrono::milliseconds(300));
   }
   
   delete player;

@@ -18,6 +18,7 @@ class Drawable {
 public:
   Drawable();
   virtual sf::Sprite getSprite() = 0;
+  virtual void stepSprite() = 0;
 };
 
 #endif /* Drawable_hpp */
