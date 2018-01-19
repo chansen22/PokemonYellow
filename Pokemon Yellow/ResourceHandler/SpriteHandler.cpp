@@ -9,21 +9,22 @@
 #include "SpriteHandler.hpp"
 
 SpriteHandler::SpriteHandler(void) {
-  this->sprites = new std::vector<sf::Sprite>();
+  this->drawables = new std::vector<Drawable *>();
 }
 
 SpriteHandler::~SpriteHandler() {
-  delete this->sprites;
+  delete this->drawables;
 }
 
-void SpriteHandler::addSprite(sf::Sprite sprite) {
-  std::vector<sf::Sprite>::iterator it = this->sprites->begin();
-  this->sprites->insert(it, sprite);
+void SpriteHandler::addDrawable(Drawable *drawable) {
+  std::vector<Drawable *>::iterator it = this->drawables->begin();
+  this->drawables->insert(it, drawable);
 }
 
-void SpriteHandler::drawSpritesInWindow(sf::RenderWindow *window) {
-  std::vector<sf::Sprite>::iterator it;
-  for (it = sprites->begin(); it < sprites->end(); it++) {
-    window->draw(*it);
+void SpriteHandler::drawInWindow(sf::RenderWindow *window) {
+  std::vector<Drawable *>::iterator it;
+  for (it = drawables->begin(); it < drawables->end(); it++) {
+    sf::Sprite sprite = (*it)->getSprite();
+    window->draw(sprite);
   }
 }

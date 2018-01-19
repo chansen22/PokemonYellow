@@ -17,7 +17,7 @@ class Drawable {
   sf::Sprite sprite;
 public:
   Drawable();
-  sf::Sprite getSprite();
+  virtual sf::Sprite getSprite() = 0;
 };
 
 #endif /* Drawable_hpp */

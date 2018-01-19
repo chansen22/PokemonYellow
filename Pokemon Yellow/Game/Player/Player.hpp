@@ -11,8 +11,9 @@
 
 #include <stdio.h>
 #include <SFML/Graphics.hpp>
+#include "Drawable.hpp"
 
-class Player {
+class Player: Drawable {
 public:
   double x = 0;
   double y = 0;
@@ -20,7 +21,7 @@ public:
   Player();
   ~Player();
   
-  sf::Sprite getSprite(); // i think sprite is getting null'd? or falling out of scope after our init?
+  sf::Sprite getSprite();
 private:
   sf::Sprite sprite;
   sf::Texture texture;

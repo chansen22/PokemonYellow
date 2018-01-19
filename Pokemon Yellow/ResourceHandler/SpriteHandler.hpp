@@ -12,14 +12,16 @@
 #include <stdio.h>
 #include <SFML/Graphics.hpp>
 
+#include "Drawable.hpp"
+
 class SpriteHandler {
-  std::vector<sf::Sprite> *sprites;
+  std::vector<Drawable *> *drawables;
   
 public:
   SpriteHandler();
   ~SpriteHandler();
-  void addSprite(sf::Sprite);
-  void drawSpritesInWindow(sf::RenderWindow *window);
+  void addDrawable(Drawable *);
+  void drawInWindow(sf::RenderWindow *window);
 };
 
 #endif /* SpriteHandler_hpp */

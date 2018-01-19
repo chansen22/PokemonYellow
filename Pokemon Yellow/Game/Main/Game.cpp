@@ -25,7 +25,7 @@ void Game::start() {
   EventHandler *eventHandler = new EventHandler(renderWindow);
   
   Player *player = new Player();
-  spriteHandler->addSprite(player->getSprite());
+  spriteHandler->addDrawable((Drawable *)player);
 
   while (window.isOpen()) {
     // Process events
@@ -38,7 +38,7 @@ void Game::start() {
     // Clear screen
     window.clear();
     
-    spriteHandler->drawSpritesInWindow(renderWindow);
+    spriteHandler->drawInWindow(renderWindow);
 
     // Update the window
     window.display();
