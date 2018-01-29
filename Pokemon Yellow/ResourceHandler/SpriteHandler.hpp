@@ -21,7 +21,7 @@ public:
   SpriteHandler();
   ~SpriteHandler();
   void addDrawable(Drawable *);
-  void drawInWindow(sf::RenderWindow *window);
+  void drawInWindow(sf::RenderWindow *);
   void stepSprites();
 };
 

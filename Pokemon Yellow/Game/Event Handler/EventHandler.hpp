@@ -11,14 +11,19 @@
 
 #include <stdio.h>
 #include <SFML/Graphics.hpp> // event?
+#include "Eventable.hpp"
 
 class EventHandler {
+  std::vector<Eventable *> *eventables;
   sf::RenderWindow *window;
+  
 public:
-  EventHandler(sf::RenderWindow *renderWindow);
+  EventHandler(sf::RenderWindow *);
+  void addEventable(Eventable *);
   bool handleEvent(sf::Event *);
 private:
-  void keyPressed(sf::Event *event);
+  void keyPressed(sf::Event *);
+  void directionPressed(DirectionEvent);
 };
 
 #endif /* EventHandler_hpp */

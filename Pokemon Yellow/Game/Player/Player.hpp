@@ -12,11 +12,13 @@
 #include <stdio.h>
 #include <SFML/Graphics.hpp>
 #include "Drawable.hpp"
+#include "Eventable.hpp"
 
-class Player: Drawable {
+class Player: Drawable, Eventable {
 public:
   double x = 0;
   double y = 0;
+  std::string imageString;
   int step = 1;
 
   Player();
@@ -24,6 +26,7 @@ public:
   
   sf::Sprite getSprite();
   void stepSprite();
+  void directionEvent(DirectionEvent);
 private:
   sf::Sprite sprite;
   sf::Texture texture;

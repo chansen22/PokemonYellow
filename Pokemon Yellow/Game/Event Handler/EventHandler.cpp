@@ -10,7 +10,13 @@
 
 
 EventHandler::EventHandler(sf::RenderWindow *renderWindow) {
+  this->eventables = new std::vector<Eventable *>();
   this->window = renderWindow;
+}
+
+void EventHandler::addEventable(Eventable *eventable) {
+  std::vector<Eventable *>::iterator it = this->eventables->begin();
+  this->eventables->insert(it, eventable);
 }
 
 bool EventHandler::handleEvent(sf::Event *event) {
@@ -52,7 +58,32 @@ bool EventHandler::handleEvent(sf::Event *event) {
 }
 
 void EventHandler::keyPressed(sf::Event *event) {
-  if (event->key.code == sf::Keyboard::Escape) {
-    this->window->close();
+  sf::Keyboard::Key keyCode = event->key.code;
+  switch (keyCode) {
+    case sf::Keyboard::Escape:
+      this->window->close();
+      break;
+    case sf::Keyboard::W:
+    case sf::Keyboard::Up:
+      return directionPressed(up);
+    case sf::Keyboard::A:
+    case sf::Keyboard::Left:
+      return directionPressed(left);
+    case sf::Keyboard::S:
+    case sf::Keyboard::Down:
+      return directionPressed(down);
+    case sf::Keyboard::D:
+    case sf::Keyboard::Right:
+      return directionPressed(right);
+    default:
+      printf("Unhandled key pressed");
+      break;
+  }
+}
+
+void EventHandler::directionPressed(DirectionEvent direction) {
+  std::vector<Eventable *>::iterator it;
+  for (it = this->eventables->begin(); it < this->eventables->end(); it++) {
+    (*it)->directionEvent(direction);
   }
 }

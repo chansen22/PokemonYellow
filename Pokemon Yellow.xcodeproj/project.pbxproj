@@ -15,13 +15,14 @@
 		43F65AE6201067DD006CB8A1 /* ResourceHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F65AE4201067DD006CB8A1 /* ResourceHandler.cpp */; };
 		43F65AE9201068AC006CB8A1 /* SpriteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F65AE7201068AC006CB8A1 /* SpriteHandler.cpp */; };
 		43F65AF3201078EB006CB8A1 /* Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F65AF1201078EB006CB8A1 /* Drawable.cpp */; };
-		43F65AF5201197BF006CB8A1 /* player2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F65AF4201197BF006CB8A1 /* player2.png */; };
-		43F65AF72011AEED006CB8A1 /* player1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F65AF62011AEED006CB8A1 /* player1.png */; };
-		43F65AF92011AF0B006CB8A1 /* player3.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F65AF82011AF0B006CB8A1 /* player3.png */; };
-		43F65AFE2011B18F006CB8A1 /* playerLeft2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F65AFA2011B18E006CB8A1 /* playerLeft2.png */; };
-		43F65AFF2011B18F006CB8A1 /* playerRight2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F65AFB2011B18F006CB8A1 /* playerRight2.png */; };
-		43F65B002011B18F006CB8A1 /* playerRight1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F65AFC2011B18F006CB8A1 /* playerRight1.png */; };
-		43F65B012011B18F006CB8A1 /* playerLeft1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F65AFD2011B18F006CB8A1 /* playerLeft1.png */; };
+		43F65AF5201197BF006CB8A1 /* player_up1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F65AF4201197BF006CB8A1 /* player_up1.png */; };
+		43F65AF72011AEED006CB8A1 /* player_standing1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F65AF62011AEED006CB8A1 /* player_standing1.png */; };
+		43F65AF92011AF0B006CB8A1 /* player_up2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F65AF82011AF0B006CB8A1 /* player_up2.png */; };
+		43F65AFE2011B18F006CB8A1 /* player_left2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F65AFA2011B18E006CB8A1 /* player_left2.png */; };
+		43F65B012011B18F006CB8A1 /* player_left1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F65AFD2011B18F006CB8A1 /* player_left1.png */; };
+		43F65B042015B4C6006CB8A1 /* Eventable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F65B022015B4C6006CB8A1 /* Eventable.cpp */; };
+		43F65B0B2015C0C9006CB8A1 /* player_right2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F65B092015C0C9006CB8A1 /* player_right2.png */; };
+		43F65B0C2015C0C9006CB8A1 /* player_right1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F65B0A2015C0C9006CB8A1 /* player_right1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,13 +43,15 @@
 		43F65AE8201068AC006CB8A1 /* SpriteHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SpriteHandler.hpp; sourceTree = "<group>"; };
 		43F65AF1201078EB006CB8A1 /* Drawable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Drawable.cpp; sourceTree = "<group>"; };
 		43F65AF2201078EB006CB8A1 /* Drawable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Drawable.hpp; sourceTree = "<group>"; };
-		43F65AF4201197BF006CB8A1 /* player2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player2.png; sourceTree = "<group>"; };
-		43F65AF62011AEED006CB8A1 /* player1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player1.png; sourceTree = "<group>"; };
-		43F65AF82011AF0B006CB8A1 /* player3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player3.png; sourceTree = "<group>"; };
-		43F65AFA2011B18E006CB8A1 /* playerLeft2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playerLeft2.png; sourceTree = "<group>"; };
-		43F65AFB2011B18F006CB8A1 /* playerRight2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playerRight2.png; sourceTree = "<group>"; };
-		43F65AFC2011B18F006CB8A1 /* playerRight1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playerRight1.png; sourceTree = "<group>"; };
-		43F65AFD2011B18F006CB8A1 /* playerLeft1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playerLeft1.png; sourceTree = "<group>"; };
+		43F65AF4201197BF006CB8A1 /* player_up1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_up1.png; sourceTree = "<group>"; };
+		43F65AF62011AEED006CB8A1 /* player_standing1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_standing1.png; sourceTree = "<group>"; };
+		43F65AF82011AF0B006CB8A1 /* player_up2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_up2.png; sourceTree = "<group>"; };
+		43F65AFA2011B18E006CB8A1 /* player_left2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_left2.png; sourceTree = "<group>"; };
+		43F65AFD2011B18F006CB8A1 /* player_left1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_left1.png; sourceTree = "<group>"; };
+		43F65B022015B4C6006CB8A1 /* Eventable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Eventable.cpp; sourceTree = "<group>"; };
+		43F65B032015B4C6006CB8A1 /* Eventable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Eventable.hpp; sourceTree = "<group>"; };
+		43F65B092015C0C9006CB8A1 /* player_right2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_right2.png; sourceTree = "<group>"; };
+		43F65B0A2015C0C9006CB8A1 /* player_right1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_right1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 			children = (
 				43F65AD92010564D006CB8A1 /* EventHandler.cpp */,
 				43F65ADA2010564D006CB8A1 /* EventHandler.hpp */,
+				43F65B022015B4C6006CB8A1 /* Eventable.cpp */,
+				43F65B032015B4C6006CB8A1 /* Eventable.hpp */,
 			);
 			path = "Event Handler";
 			sourceTree = "<group>";
@@ -160,13 +165,13 @@
 		43F65AEA20106F8C006CB8A1 /* Player Sprites */ = {
 			isa = PBXGroup;
 			children = (
-				43F65AF62011AEED006CB8A1 /* player1.png */,
-				43F65AF4201197BF006CB8A1 /* player2.png */,
-				43F65AF82011AF0B006CB8A1 /* player3.png */,
-				43F65AFD2011B18F006CB8A1 /* playerLeft1.png */,
-				43F65AFA2011B18E006CB8A1 /* playerLeft2.png */,
-				43F65AFC2011B18F006CB8A1 /* playerRight1.png */,
-				43F65AFB2011B18F006CB8A1 /* playerRight2.png */,
+				43F65AF62011AEED006CB8A1 /* player_standing1.png */,
+				43F65AF4201197BF006CB8A1 /* player_up1.png */,
+				43F65AF82011AF0B006CB8A1 /* player_up2.png */,
+				43F65AFD2011B18F006CB8A1 /* player_left1.png */,
+				43F65AFA2011B18E006CB8A1 /* player_left2.png */,
+				43F65B0A2015C0C9006CB8A1 /* player_right1.png */,
+				43F65B092015C0C9006CB8A1 /* player_right2.png */,
 			);
 			path = "Player Sprites";
 			sourceTree = "<group>";
@@ -238,13 +243,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43F65AFE2011B18F006CB8A1 /* playerLeft2.png in Resources */,
-				43F65B002011B18F006CB8A1 /* playerRight1.png in Resources */,
-				43F65AFF2011B18F006CB8A1 /* playerRight2.png in Resources */,
-				43F65B012011B18F006CB8A1 /* playerLeft1.png in Resources */,
-				43F65AF92011AF0B006CB8A1 /* player3.png in Resources */,
-				43F65AF72011AEED006CB8A1 /* player1.png in Resources */,
-				43F65AF5201197BF006CB8A1 /* player2.png in Resources */,
+				43F65AFE2011B18F006CB8A1 /* player_left2.png in Resources */,
+				43F65B012011B18F006CB8A1 /* player_left1.png in Resources */,
+				43F65AF92011AF0B006CB8A1 /* player_up2.png in Resources */,
+				43F65AF72011AEED006CB8A1 /* player_standing1.png in Resources */,
+				43F65B0C2015C0C9006CB8A1 /* player_right1.png in Resources */,
+				43F65B0B2015C0C9006CB8A1 /* player_right2.png in Resources */,
+				43F65AF5201197BF006CB8A1 /* player_up1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43F65AD82010550B006CB8A1 /* Game.cpp in Sources */,
+				43F65B042015B4C6006CB8A1 /* Eventable.cpp in Sources */,
 				43F65ADB2010564D006CB8A1 /* EventHandler.cpp in Sources */,
 				43F65AC32010548B006CB8A1 /* main.cpp in Sources */,
 				43F65AC02010548B006CB8A1 /* ResourcePath.mm in Sources */,

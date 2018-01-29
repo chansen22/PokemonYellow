@@ -28,6 +28,7 @@ void Game::start() {
   
   Player *player = new Player();
   spriteHandler->addDrawable((Drawable *)player);
+  eventHandler->addEventable((Eventable *)player);
 
   while (window.isOpen()) {
     // Process events
