@@ -16,6 +16,9 @@ class Drawable {
   sf::Texture texture;
   sf::Sprite sprite;
 public:
+  double x = 0;
+  double y = 0;
+  
   Drawable();
   virtual sf::Sprite getSprite() = 0;
   virtual void stepSprite() = 0;

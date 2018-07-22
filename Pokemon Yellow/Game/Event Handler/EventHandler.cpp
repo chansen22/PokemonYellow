@@ -19,6 +19,10 @@ void EventHandler::addEventable(Eventable *eventable) {
   this->eventables->insert(it, eventable);
 }
 
+void EventHandler::setPlayer(Player *player) {
+  this->player = player;
+}
+
 bool EventHandler::handleEvent(sf::Event *event) {
   switch (event->type) {
     case sf::Event::Closed:
@@ -84,6 +88,6 @@ void EventHandler::keyPressed(sf::Event *event) {
 void EventHandler::directionPressed(DirectionEvent direction) {
   std::vector<Eventable *>::iterator it;
   for (it = this->eventables->begin(); it < this->eventables->end(); it++) {
-    (*it)->directionEvent(direction);
+    (*it)->directionEvent(direction, player);
   }
 }

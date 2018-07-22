@@ -12,14 +12,16 @@
 #include <stdio.h>
 #include <SFML/Graphics.hpp> // event?
 #include "Eventable.hpp"
+#include "Player.hpp"
 
 class EventHandler {
   std::vector<Eventable *> *eventables;
   sf::RenderWindow *window;
-  
+  Player *player;
 public:
   EventHandler(sf::RenderWindow *);
   void addEventable(Eventable *);
+  void setPlayer(Player *);
   bool handleEvent(sf::Event *);
 private:
   void keyPressed(sf::Event *);

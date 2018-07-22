@@ -25,6 +25,7 @@ void SpriteHandler::drawInWindow(sf::RenderWindow *window) {
   std::vector<Drawable *>::iterator it;
   for (it = drawables->begin(); it < drawables->end(); it++) {
     sf::Sprite sprite = (*it)->getSprite();
+    sprite.setScale(8, 8);
     window->draw(sprite);
   }
 }

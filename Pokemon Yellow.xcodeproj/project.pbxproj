@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4397AE3020F31153000BB5D3 /* BackgroundHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4397AE2E20F31153000BB5D3 /* BackgroundHandler.cpp */; };
+		4397AE3320F31A96000BB5D3 /* Boundry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4397AE3120F31A96000BB5D3 /* Boundry.cpp */; };
+		43CB3DF8201EFC6200ABF952 /* Background.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43CB3DF6201EFC6200ABF952 /* Background.cpp */; };
+		43CB3DFC201EFE3A00ABF952 /* Town.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43CB3DFA201EFE3A00ABF952 /* Town.cpp */; };
+		43CB3DFF201EFFE900ABF952 /* Pallet.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CB3DFE201EFFE900ABF952 /* Pallet.png */; };
+		43CB3E02201F024B00ABF952 /* Pallet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43CB3E00201F024B00ABF952 /* Pallet.cpp */; };
 		43F65AC02010548B006CB8A1 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 43F65ABF2010548B006CB8A1 /* ResourcePath.mm */; };
 		43F65AC32010548B006CB8A1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F65AC22010548B006CB8A1 /* main.cpp */; };
 		43F65AD82010550B006CB8A1 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F65AD62010550B006CB8A1 /* Game.cpp */; };
@@ -26,6 +32,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4397AE2E20F31153000BB5D3 /* BackgroundHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BackgroundHandler.cpp; sourceTree = "<group>"; };
+		4397AE2F20F31153000BB5D3 /* BackgroundHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BackgroundHandler.hpp; sourceTree = "<group>"; };
+		4397AE3120F31A96000BB5D3 /* Boundry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Boundry.cpp; sourceTree = "<group>"; };
+		4397AE3220F31A96000BB5D3 /* Boundry.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Boundry.hpp; sourceTree = "<group>"; };
+		43CB3DF6201EFC6200ABF952 /* Background.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Background.cpp; sourceTree = "<group>"; };
+		43CB3DF7201EFC6200ABF952 /* Background.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Background.hpp; sourceTree = "<group>"; };
+		43CB3DFA201EFE3A00ABF952 /* Town.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Town.cpp; sourceTree = "<group>"; };
+		43CB3DFB201EFE3A00ABF952 /* Town.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Town.hpp; sourceTree = "<group>"; };
+		43CB3DFE201EFFE900ABF952 /* Pallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pallet.png; sourceTree = "<group>"; };
+		43CB3E00201F024B00ABF952 /* Pallet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Pallet.cpp; sourceTree = "<group>"; };
+		43CB3E01201F024B00ABF952 /* Pallet.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Pallet.hpp; sourceTree = "<group>"; };
 		43F65ABA2010548B006CB8A1 /* Pokemon Yellow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokemon Yellow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F65ABE2010548B006CB8A1 /* Pokemon Yellow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pokemon Yellow-Info.plist"; sourceTree = "<group>"; };
 		43F65ABF2010548B006CB8A1 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
@@ -65,6 +82,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43CB3DF5201EFC4C00ABF952 /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				43CB3DF6201EFC6200ABF952 /* Background.cpp */,
+				43CB3DF7201EFC6200ABF952 /* Background.hpp */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		43CB3DF9201EFE2A00ABF952 /* Town */ = {
+			isa = PBXGroup;
+			children = (
+				43CB3DFA201EFE3A00ABF952 /* Town.cpp */,
+				43CB3DFB201EFE3A00ABF952 /* Town.hpp */,
+				43CB3E00201F024B00ABF952 /* Pallet.cpp */,
+				43CB3E01201F024B00ABF952 /* Pallet.hpp */,
+			);
+			path = Town;
+			sourceTree = "<group>";
+		};
+		43CB3DFD201EFFDA00ABF952 /* Background Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				43CB3DFE201EFFE900ABF952 /* Pallet.png */,
+			);
+			path = "Background Sprites";
+			sourceTree = "<group>";
+		};
 		43F65AB02010548A006CB8A1 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +149,7 @@
 		43F65AC42010548B006CB8A1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				43CB3DFD201EFFDA00ABF952 /* Background Sprites */,
 				43F65AEA20106F8C006CB8A1 /* Player Sprites */,
 			);
 			name = Resources;
@@ -112,6 +158,8 @@
 		43F65AD2201054E0006CB8A1 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				43CB3DF9201EFE2A00ABF952 /* Town */,
+				43CB3DF5201EFC4C00ABF952 /* Background */,
 				43F65AF0201078DB006CB8A1 /* Drawable */,
 				43F65ADC20105B64006CB8A1 /* Player */,
 				43F65AE2201066B8006CB8A1 /* Main */,
@@ -136,6 +184,8 @@
 				43F65ADA2010564D006CB8A1 /* EventHandler.hpp */,
 				43F65B022015B4C6006CB8A1 /* Eventable.cpp */,
 				43F65B032015B4C6006CB8A1 /* Eventable.hpp */,
+				4397AE3120F31A96000BB5D3 /* Boundry.cpp */,
+				4397AE3220F31A96000BB5D3 /* Boundry.hpp */,
 			);
 			path = "Event Handler";
 			sourceTree = "<group>";
@@ -158,6 +208,8 @@
 				43F65AE5201067DD006CB8A1 /* ResourceHandler.hpp */,
 				43F65AE7201068AC006CB8A1 /* SpriteHandler.cpp */,
 				43F65AE8201068AC006CB8A1 /* SpriteHandler.hpp */,
+				4397AE2E20F31153000BB5D3 /* BackgroundHandler.cpp */,
+				4397AE2F20F31153000BB5D3 /* BackgroundHandler.hpp */,
 			);
 			path = ResourceHandler;
 			sourceTree = "<group>";
@@ -250,6 +302,7 @@
 				43F65B0C2015C0C9006CB8A1 /* player_right1.png in Resources */,
 				43F65B0B2015C0C9006CB8A1 /* player_right2.png in Resources */,
 				43F65AF5201197BF006CB8A1 /* player_up1.png in Resources */,
+				43CB3DFF201EFFE900ABF952 /* Pallet.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +336,12 @@
 				43F65AC02010548B006CB8A1 /* ResourcePath.mm in Sources */,
 				43F65AE9201068AC006CB8A1 /* SpriteHandler.cpp in Sources */,
 				43F65AE6201067DD006CB8A1 /* ResourceHandler.cpp in Sources */,
+				4397AE3320F31A96000BB5D3 /* Boundry.cpp in Sources */,
+				43CB3DF8201EFC6200ABF952 /* Background.cpp in Sources */,
+				4397AE3020F31153000BB5D3 /* BackgroundHandler.cpp in Sources */,
 				43F65ADF20106607006CB8A1 /* Player.cpp in Sources */,
+				43CB3E02201F024B00ABF952 /* Pallet.cpp in Sources */,
+				43CB3DFC201EFE3A00ABF952 /* Town.cpp in Sources */,
 				43F65AF3201078EB006CB8A1 /* Drawable.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

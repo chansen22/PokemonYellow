@@ -6,11 +6,13 @@
 //  Copyright © 2018 Christopher Hansen. All rights reserved.
 //
 
+#include <unistd.h>
+
 #include "Game.hpp"
 #include "EventHandler.hpp"
+#include "BackgroundHandler.hpp"
 #include "Player.hpp"
-#include <chrono>
-#include <thread>
+#include "Pallet.hpp"
 
 Game::Game() {
   this->spriteHandler = new SpriteHandler();
@@ -20,16 +22,24 @@ Game::~Game() {
   delete this->spriteHandler;
 }
 
+int resolution = 1024;
+
 void Game::start() {
-  sf::RenderWindow window(sf::VideoMode(800, 600), "Pokeman");
+  sf::RenderWindow window(sf::VideoMode(resolution, resolution), "Pokeman");
   window.setFramerateLimit(60);
   sf::RenderWindow *renderWindow = &window;
   EventHandler *eventHandler = new EventHandler(renderWindow);
+  BackgroundHandler *backgroundHandler = new BackgroundHandler();
   
-  Player *player = new Player();
+  Player *player = new Player(resolution / 2, resolution / 2);
+  eventHandler->setPlayer(player);
   spriteHandler->addDrawable((Drawable *)player);
   eventHandler->addEventable((Eventable *)player);
-
+  
+  Pallet *palletTown = new Pallet(PalletTown);
+  backgroundHandler->addDrawable((Drawable *)palletTown);
+  eventHandler->addEventable((Eventable *)palletTown);
+  
   while (window.isOpen()) {
     // Process events
     sf::Event event;
@@ -41,14 +51,17 @@ void Game::start() {
     // Clear screen
     window.clear();
     
+    backgroundHandler->drawInWindow(renderWindow);
     spriteHandler->drawInWindow(renderWindow);
     spriteHandler->stepSprites();
 
     // Update the window
     window.display();
-    std::this_thread::sleep_for(std::chrono::milliseconds(300));
+    usleep(100000);
   }
   
   delete player;
+  delete palletTown;
   delete eventHandler;
+  delete backgroundHandler;
 }

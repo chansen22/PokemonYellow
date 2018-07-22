@@ -11,12 +11,15 @@
 
 #include <stdio.h>
 #include <SFML/Graphics.hpp>
+#include "Boundry.hpp"
 
 enum DirectionEvent { up, down, left, right };
 
 class Eventable {
 public:
-  virtual void directionEvent(DirectionEvent) = 0;
+  std::vector<Boundry *> *boundries;
+  virtual void directionEvent(DirectionEvent, void *) = 0;
+  virtual bool canMove(DirectionEvent, void *) = 0;
 };
 
 #endif /* Eventable_hpp */

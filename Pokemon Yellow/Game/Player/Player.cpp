@@ -16,8 +16,10 @@ const std::string upImage = "up";
 const std::string rightImage = "right";
 const std::string leftImage = "left";
 
-Player::Player() {
+Player::Player(int xPos, int yPos) {
   setup();
+  x = xPos;
+  y = yPos;
 }
 
 Player::~Player() {
@@ -26,42 +28,44 @@ Player::~Player() {
 #pragma mark - Drawable
 
 sf::Sprite Player::getSprite() {
-  this->sprite.setScale(10, 10);
-  return this->sprite;
+  return sprite;
 }
 
 void Player::stepSprite() {
   std::string stepString = std::to_string(step);
-  this->texture.loadFromFile(resourcePath() + this->imageString + stepString + pngExtension);
-  this->sprite = sf::Sprite(texture);
-  int newStep = this->step + 1;
+  texture.loadFromFile(resourcePath() + imageString + stepString + pngExtension);
+  sprite = sf::Sprite(texture);
+  sprite.setPosition(512, 512);
+  int newStep = step + 1;
   newStep = newStep % 3 == 0 ? 1 : 2;
-  this->step = newStep;
+  step = newStep;
 }
 
 #pragma mark - Eventable
 
-void Player::directionEvent(DirectionEvent event) {
-  this->step = 1;
+void Player::directionEvent(DirectionEvent event, void *) {
+  step = 1;
   switch (event) {
     case up:
-      return this->imageString = imagePrefix + upImage;
+      return imageString = imagePrefix + upImage;
     case down:
-      return;/*this->imageString = imagePrefix + downImage;*/
+      return;/*imageString = imagePrefix + downImage;*/
     case left:
-      return this->imageString = imagePrefix + leftImage;
+      return imageString = imagePrefix + leftImage;
     case right:
-      return this->imageString = imagePrefix + rightImage;
+      return imageString = imagePrefix + rightImage;
   }
 }
+
+bool Player::canMove(DirectionEvent event, void *) { return false; }
 
 #pragma mark - Private
 
 void Player::setup() {
-  this->imageString = imagePrefix + standingImage;
+  imageString = imagePrefix + standingImage;
   // Load a sprite to display
-  if (!this->texture.loadFromFile(resourcePath() + this->imageString)) {
+  if (!texture.loadFromFile(resourcePath() + imageString)) {
     return EXIT_FAILURE;
   }
-  this->sprite = sf::Sprite(texture);
+  sprite = sf::Sprite(texture);
 }

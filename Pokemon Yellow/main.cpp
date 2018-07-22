@@ -16,6 +16,11 @@
 
 #include "Game.hpp"
 
+#import <iostream>
+#import <map>
+#import <iterator>
+
+using namespace std;
 int main(int, char const**) {
   Game *game = new Game();
   game->start();
